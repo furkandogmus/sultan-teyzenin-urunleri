@@ -102,11 +102,13 @@ h1 em, h2 em { font-weight: 600; color: #efb49c; }
 .steps { display: flex; gap: 28px; margin: 38px 0; }
 .steps p { display: flex; align-items: center; gap: 10px; max-width: 210px; margin: 0; color: rgba(255,255,255,.65); font-size: 12px; line-height: 1.5; }
 .steps span { flex: 0 0 auto; display: grid; place-items: center; width: 27px; height: 27px; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; color: #fff; font-size: 10px; }
+.order-actions { display: flex; align-items: center; gap: 24px; }
+.call-link { font-size: 13px; font-weight: 700; border-bottom: 1px solid currentColor; }
 
 footer { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 35px clamp(24px, 5vw, 80px); border-top: 1px solid var(--line); }
 footer p { color: var(--muted); font-size: 12px; }
-footer > a:last-child { color: var(--terracotta); font-size: 12px; font-weight: 700; }
-.floating-whatsapp { display: none; }
+.footer-links { display: flex; align-items: center; gap: 20px; color: var(--terracotta); font-size: 12px; font-weight: 700; }
+.floating-contact { display: none; }
 
 @media (max-width: 900px) {
   .site-header nav, .site-header .button-small { display: none; }
@@ -132,9 +134,19 @@ footer > a:last-child { color: var(--terracotta); font-size: 12px; font-weight: 
   .order { padding: 70px 20px 100px; }
   .order-card { padding: 48px 25px; }
   .steps { flex-direction: column; margin: 30px 0; }
+  .order-actions { align-items: flex-start; flex-direction: column; gap: 20px; }
   footer { flex-direction: column; text-align: center; padding-bottom: 100px; }
+  .footer-links { flex-direction: column; gap: 12px; }
+  .floating-contact {
+    position: fixed; z-index: 20; left: 14px; right: 14px; bottom: 12px; display: grid;
+    grid-template-columns: 70px 1fr; gap: 8px;
+  }
+  .floating-call {
+    display: grid; place-items: center; border-radius: 100px; background: var(--paper); color: var(--terracotta);
+    box-shadow: 0 8px 30px rgba(0,0,0,.2); font-size: 12px; font-weight: 700;
+  }
   .floating-whatsapp {
-    position: fixed; z-index: 20; left: 14px; right: 14px; bottom: 12px; display: flex; align-items: center;
+    display: flex; align-items: center;
     justify-content: space-between; padding: 13px 20px; border-radius: 100px; background: #1f9f57; color: #fff;
     box-shadow: 0 8px 30px rgba(0,0,0,.2); font-weight: 700; font-size: 13px;
   }

@@ -1,5 +1,5 @@
 // Telefon numarasını ülke koduyla, başında + olmadan güncelleyin.
-const WHATSAPP_NUMBER = "905555555555";
+const WHATSAPP_NUMBER = "905010191975";
 
 document.querySelectorAll(".whatsapp-link").forEach((link) => {
   const message = link.dataset.message || "Merhaba Sultan Teyze, bilgi almak istiyorum.";
