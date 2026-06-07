@@ -88,6 +88,32 @@ h1 em, h2 em { font-weight: 600; color: #efb49c; }
 .product-info h3 { margin-bottom: 15px; font-size: 27px; line-height: 1.1; }
 .product-info span { display: block; margin-bottom: 25px; color: var(--muted); font-size: 12px; }
 .product-info a { font-size: 12px; font-weight: 700; border-bottom: 1px solid var(--line); }
+.product-actions { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+.quick-add { padding: 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--terracotta); font: 700 12px "DM Sans", sans-serif; cursor: pointer; }
+.quick-add.is-added { color: var(--sage); }
+
+.quick-order { margin-top: 70px; padding: clamp(30px, 5vw, 65px); border-radius: 6px; background: var(--paper); }
+.quick-order-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 35px; }
+.quick-order-heading h3 { font-size: clamp(36px, 4vw, 56px); line-height: 1; letter-spacing: -.035em; }
+.quick-order-heading > p { max-width: 390px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.quick-order-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; }
+.quick-items { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; align-content: start; }
+.quick-item { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-height: 64px; padding: 11px 13px 11px 18px; border: 1px solid var(--line); border-radius: 4px; }
+.quick-item strong { font: 600 17px "Playfair Display", serif; }
+.quantity-control { display: flex; align-items: center; gap: 11px; }
+.quantity-control button { display: grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; font-size: 17px; }
+.quantity-control output { min-width: 14px; text-align: center; font-size: 12px; font-weight: 700; }
+.quick-summary { padding: 28px; border-radius: 4px; background: var(--ink); color: #fff; }
+.summary-label { color: #efb49c; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.summary-lines { min-height: 92px; margin: 20px 0; padding-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,.16); }
+.summary-lines p { display: flex; justify-content: space-between; gap: 20px; margin: 0 0 9px; color: rgba(255,255,255,.68); font-size: 12px; }
+.summary-lines strong { color: #fff; }
+.quick-summary label { display: block; margin-bottom: 8px; font-size: 11px; font-weight: 700; }
+.quick-summary textarea { width: 100%; margin-bottom: 15px; padding: 12px; resize: vertical; border: 1px solid rgba(255,255,255,.2); border-radius: 3px; outline: 0; background: rgba(255,255,255,.07); color: #fff; font: 12px/1.5 "DM Sans", sans-serif; }
+.quick-summary textarea::placeholder { color: rgba(255,255,255,.38); }
+.quick-submit { width: 100%; min-height: 48px; padding: 0 18px; text-align: center; }
+.quick-submit[aria-disabled="true"] { opacity: .42; pointer-events: none; }
+.quick-summary small { display: block; margin-top: 13px; color: rgba(255,255,255,.42); font-size: 9px; line-height: 1.5; }
 
 .story { display: grid; grid-template-columns: .3fr 1fr 1fr; align-items: center; gap: 40px; max-width: none; padding-left: max(24px, calc((100vw - 1130px)/2)); padding-right: max(24px, calc((100vw - 1130px)/2)); background: var(--sage); color: #fff; }
 .story .eyebrow { color: #d6c7ac; }
@@ -128,6 +154,12 @@ footer p { color: var(--muted); font-size: 12px; }
   .section-heading > p { margin-top: 20px; }
   .product-grid { grid-template-columns: 1fr; }
   .product-card-featured .product-photo, .product-photo { height: 280px; background-size: 900px auto; }
+  .quick-order { margin-top: 45px; padding: 30px 18px 18px; }
+  .quick-order-heading { display: block; margin-bottom: 25px; }
+  .quick-order-heading > p { margin-top: 15px; }
+  .quick-order-grid { grid-template-columns: 1fr; gap: 18px; }
+  .quick-items { grid-template-columns: 1fr; }
+  .quick-summary { padding: 24px 18px; }
   .story { display: block; padding: 75px 24px; }
   .story-quote { display: none; }
   .story-copy { margin-top: 30px; padding: 20px 0 0; border-left: 0; border-top: 1px solid rgba(255,255,255,.25); }

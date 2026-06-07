@@ -76,7 +76,10 @@
               <p>Börekler</p>
               <h3>Çıtır çıtır,<br />kat kat lezzet</h3>
               <span>Peynirli · Patatesli · Kıymalı</span>
-              <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, börek çeşitleri hakkında bilgi almak istiyorum.">Börekleri sor →</a>
+              <div class="product-actions">
+                <button class="quick-add" data-product="Börek">Hızlı seçime ekle +</button>
+                <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, börek çeşitleri hakkında bilgi almak istiyorum.">Sor →</a>
+              </div>
             </div>
           </article>
           <article class="product-card">
@@ -85,7 +88,10 @@
               <p>Poğaçalar</p>
               <h3>Yumuşacık ve<br />mis kokulu</h3>
               <span>Sade · Peynirli · Zeytinli</span>
-              <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, poğaça çeşitleri hakkında bilgi almak istiyorum.">Poğaçaları sor →</a>
+              <div class="product-actions">
+                <button class="quick-add" data-product="Poğaça">Hızlı seçime ekle +</button>
+                <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, poğaça çeşitleri hakkında bilgi almak istiyorum.">Sor →</a>
+              </div>
             </div>
           </article>
           <article class="product-card">
@@ -94,7 +100,10 @@
               <p>Tatlı Atıştırmalıklar</p>
               <h3>Çayın yanına<br />küçük mutluluklar</h3>
               <span>Kurabiye · Tatlı çörek · Kek</span>
-              <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, tatlı çeşitleri hakkında bilgi almak istiyorum.">Tatlıları sor →</a>
+              <div class="product-actions">
+                <button class="quick-add" data-product="Tatlı Atıştırmalık">Hızlı seçime ekle +</button>
+                <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, tatlı çeşitleri hakkında bilgi almak istiyorum.">Sor →</a>
+              </div>
             </div>
           </article>
           <article class="product-card">
@@ -103,7 +112,10 @@
               <p>Mantı</p>
               <h3>Minicik bohçalarda<br />kocaman emek</h3>
               <span>El açması · Ev yapımı · Dondurulmuş</span>
-              <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, ev yapımı mantı hakkında bilgi almak istiyorum.">Mantıyı sor →</a>
+              <div class="product-actions">
+                <button class="quick-add" data-product="Mantı">Hızlı seçime ekle +</button>
+                <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, ev yapımı mantı hakkında bilgi almak istiyorum.">Sor →</a>
+              </div>
             </div>
           </article>
           <article class="product-card">
@@ -112,7 +124,10 @@
               <p>Erişte</p>
               <h3>Kışlık sofraların<br />ev yapımı klasiği</h3>
               <span>Yumurtalı · Sade · Kesme</span>
-              <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, ev yapımı erişte hakkında bilgi almak istiyorum.">Erişteyi sor →</a>
+              <div class="product-actions">
+                <button class="quick-add" data-product="Erişte">Hızlı seçime ekle +</button>
+                <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, ev yapımı erişte hakkında bilgi almak istiyorum.">Sor →</a>
+              </div>
             </div>
           </article>
           <article class="product-card">
@@ -121,9 +136,34 @@
               <p>Yaprak Sarma</p>
               <h3>İncecik sarılmış,<br />tam kıvamında</h3>
               <span>Zeytinyağlı · Özel gün · Toplu sipariş</span>
-              <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, yaprak sarma hakkında bilgi almak istiyorum.">Sarmayı sor →</a>
+              <div class="product-actions">
+                <button class="quick-add" data-product="Yaprak Sarma">Hızlı seçime ekle +</button>
+                <a class="whatsapp-link" data-message="Merhaba Sultan Teyze, yaprak sarma hakkında bilgi almak istiyorum.">Sor →</a>
+              </div>
             </div>
           </article>
+        </div>
+        <div class="quick-order" id="hizli-siparis">
+          <div class="quick-order-heading">
+            <div>
+              <p class="eyebrow">Hızlı ürün seçimi</p>
+              <h3>İstediklerini seç,<br />WhatsApp'tan gönder.</h3>
+            </div>
+            <p>Adet veya paket miktarını seç. Çeşit ve gramaj detaylarını WhatsApp'ta birlikte netleştirelim.</p>
+          </div>
+          <div class="quick-order-grid">
+            <div class="quick-items" aria-label="Hızlı sipariş ürün listesi"></div>
+            <div class="quick-summary">
+              <span class="summary-label">Sipariş özeti</span>
+              <div class="summary-lines" aria-live="polite">
+                <p>Henüz ürün seçmediniz.</p>
+              </div>
+              <label for="order-note">Sipariş notu</label>
+              <textarea id="order-note" rows="3" placeholder="Örn. Börek peynirli olsun, cumartesi teslim..."></textarea>
+              <a class="button quick-submit" aria-disabled="true">Seçimi WhatsApp'tan Gönder</a>
+              <small>Ankara içi elden teslim · Miktar ve fiyat teyidi WhatsApp'tan yapılır.</small>
+            </div>
+          </div>
         </div>
       </section>
 
