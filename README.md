@@ -1,6 +1,6 @@
 # Sultan Teyze'nin Ürünleri
 
-Ev yapımı hamur işi ürünlerini sergileyen ve müşterileri WhatsApp sipariş hattına yönlendiren tek sayfalık web sitesi.
+Ev yapımı börek, mantı, erişte, sarma ve diğer ürünleri sergileyen; müşterileri WhatsApp sipariş hattına yönlendiren tek sayfalık web sitesi.
 
 ## Düzenleme
 
